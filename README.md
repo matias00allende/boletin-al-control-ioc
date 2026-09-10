@@ -20,9 +20,8 @@ fue curado ni filtrado a mano línea por línea.
 
 - **No es el repositorio del pipeline.** El código fuente y la
   infraestructura que generan este archivo están en un repositorio distinto:
-  `github.com/mallendec/soc-threat-intel-pipeline`. Esta cuenta
-  (`matias00allende`) es independiente y contiene **únicamente el dataset**,
-  no el pipeline.
+  `github.com/matias00allende/soc-threat-intel-pipeline`. Este repositorio
+  contiene **únicamente el dataset**, no el pipeline.
 - **No es un feed en vivo.** Es una fotografía tomada en una fecha
   determinada (ver `CHANGELOG.md`). El sistema real actualiza el feed de
   forma continua; este snapshot no se sincroniza automáticamente.
@@ -30,15 +29,15 @@ fue curado ni filtrado a mano línea por línea.
   referencia y estudio. Para uso operacional real, cruzar siempre contra
   fuentes de threat intelligence propias y vigentes.
 
-## Aviso de falsos positivos
+## Sobre la clasificación por familia o campaña
 
-Este listado proviene de un proceso de clasificación asistido por un modelo
-de lenguaje sobre boletines públicos de seguridad. Como todo sistema de
-clasificación automatizada, **puede contener falsos positivos** (hashes
-marcados como asociados a una familia o campaña sin confirmación humana
-individual de cada caso) y, en menor medida, podría no capturar todas las
-variantes de una amenaza (falsos negativos). No usar este archivo como única
-fuente de bloqueo en un entorno productivo sin validación adicional.
+Los hashes de este dataset provienen de fuentes confiables: reportes de
+empresas de ciberseguridad, ejercicios propios de threat hunting y operación
+SOC, y publicaciones de medios y proveedores legítimos de threat
+intelligence. La columna `FAMILIA_O_CAMPAÑA` es de carácter **referencial**:
+proviene de un proceso de clasificación asistido por un modelo de lenguaje y
+puede contener errores de etiquetado. No usar este archivo como única fuente
+de bloqueo en un entorno productivo sin validación adicional.
 
 ## Contenido del snapshot
 
@@ -55,3 +54,4 @@ obligatoria. Ver `LICENSE`.
 ## Contacto
 
 Matías Allende - matias.allende.contreras@gmail.com
+LinkedIn: https://www.linkedin.com/in/matiasallende/

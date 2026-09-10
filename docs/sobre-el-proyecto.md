@@ -8,10 +8,10 @@ listado de indicadores de compromiso.
 ## Por qué se comparte solo el dataset aquí
 
 El código fuente y la infraestructura como código del pipeline están
-publicados en un repositorio distinto (`github.com/mallendec/soc-threat-intel-pipeline`),
-asociado a otra cuenta. Este repositorio (`matias00allende`) es una cuenta
-independiente y contiene únicamente el dataset de salida - el resultado del
-pipeline, no su implementación.
+publicados en un repositorio distinto:
+`github.com/matias00allende/soc-threat-intel-pipeline`. Este repositorio
+contiene únicamente el dataset de salida - el resultado del pipeline, no su
+implementación.
 
 ## Cómo verificar que el dataset es real
 
@@ -23,4 +23,4 @@ que confirma que se trata del mismo objeto. Ese archivo es el que se copia en
 
 ## Referencias
 
-- Repositorio del pipeline completo: `github.com/mallendec/soc-threat-intel-pipeline`
+- Repositorio del pipeline completo: `github.com/matias00allende/soc-threat-intel-pipeline`
